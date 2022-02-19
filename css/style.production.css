@@ -8,11 +8,7 @@
 /* colors used
 gray BG == #e3e5e6
 visited link == #05676e
-selected link == #489c79 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer:
-
+selected link == #489c79
 button BG == #357b70
 grid gray = #D3D3D3
 
@@ -78,6 +74,7 @@ h1 {
 
 .profile__portrait {
   float: left;
+  height: 250px;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
@@ -208,39 +205,6 @@ button:focus,
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
-
-/* animation */
-.art-cred {
-  font-size: 8px;
-}
-
-@-webkit-keyframes color-change {
-  from {
-    fill: #a7d1ff;
-  }
-  to {
-    fill: #000070;
-  }
-}
-
-@keyframes color-change {
-  from {
-    fill: #a7d1ff;
-  }
-  to {
-    fill: #000070;
-  }
-}
-
-#path67 {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
-}
-
-
 
 /* media queries */
 

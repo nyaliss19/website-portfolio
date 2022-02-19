@@ -176,29 +176,6 @@ button:focus,
   opacity: 0.8;
 }
 
-/* animation */
-.art-cred {
-  font-size: 8px;
-}
-
-@keyframes color-change {
-  from {
-    fill: #a7d1ff;
-  }
-  to {
-    fill: #000070;
-  }
-}
-
-#path67 {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  animation: 4s color-change infinite alternate linear;
-}
-
-
-
 /* media queries */
 
 @media all and (max-width: 500px) {
