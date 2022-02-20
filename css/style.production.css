@@ -29,7 +29,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* no underline when hovering over a link */
   text-decoration: none;
 }
@@ -41,22 +42,29 @@ a:active {
 
 button {
   /* overwrites browswer defaults and resets border */
+
   border: none;
+
   /* takes the font from the outer container */
+
   font-family: inherit;
+
   /* styles the bg color, font color, and text decoration of the button */
   background-color: #357b70;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
+
   /* adds spacing to the button  */
   padding: padding 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px,
   a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over button */
   cursor: pointer;
   opacity: 0.8;
@@ -84,8 +92,8 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -106,14 +114,14 @@ h1 {
   width: 200px;
   height: 70px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -132,7 +140,7 @@ h1 {
 }
 
 .grid__item {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   padding-left: 4px;
 }
 
@@ -142,15 +150,18 @@ h1 {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+
   /* grid-template-rows: 300px 300px; */
 }
 
 * {
- -webkit-box-sizing: border-box;
-         box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contact-page, .about-page, .work-page {
+.contact-page,
+.about-page,
+.work-page {
   padding-left: 10px;
   text-align: center;
 }
@@ -161,14 +172,17 @@ h1 {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: padding 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -180,14 +194,17 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: padding 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -201,6 +218,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -211,31 +229,38 @@ button:focus,
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }

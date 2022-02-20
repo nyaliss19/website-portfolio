@@ -12,11 +12,10 @@ grid gray = #D3D3D3
   --visited: #05676e;
   --selected: #489c79;
   --button: #357b70;
-  --grid-gray: #D3D3D3;
+  --grid-gray: #d3d3d3;
   --shadow: rgba(0, 0, 0, 0.3);
   --padding: padding 10px;
-  --white: #FFFFFF;
-
+  --white: #fff;
 }
 
 body {
@@ -35,7 +34,8 @@ a:visited {
   color: var(--visited);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* no underline when hovering over a link */
   text-decoration: none;
 }
@@ -47,22 +47,29 @@ a:active {
 
 button {
   /* overwrites browswer defaults and resets border */
+
   border: none;
+
   /* takes the font from the outer container */
+
   font-family: inherit;
+
   /* styles the bg color, font color, and text decoration of the button */
   background-color: var(--button);
   color: var(--white);
   text-decoration: none;
+
   /* adds spacing to the button  */
   padding: var(--padding);
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px,
   a type of solid, and a color in RGBA format */
   border-bottom: 2px solid var(--shadow);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over button */
   cursor: pointer;
   opacity: 0.8;
@@ -134,32 +141,39 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+
   /* grid-template-rows: 300px 300px; */
 }
 
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contact-page, .about-page, .work-page {
+.contact-page,
+.about-page,
+.work-page {
   padding-left: 10px;
   text-align: center;
 }
 
 /* button */
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: var(--button);
   color: var(--white);
   text-decoration: none;
   padding: var(--padding);
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid var(--shadow);
   transition: 0.2s opacity;
@@ -171,6 +185,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -181,29 +196,36 @@ button:focus,
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .page-header {
     padding-bottom: 100px;
   }
+
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
