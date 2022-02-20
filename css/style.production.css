@@ -230,6 +230,11 @@ button:focus,
     padding-bottom: 100px;
   }
 
+  .profile__portrait {
+    height: 50px;
+    width: 50px;
+  }
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -241,6 +246,11 @@ button:focus,
     padding-bottom: 100px;
   }
 
+  .profile__portrait {
+    height: 50px;
+    width: 50px;
+  }
+
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -250,6 +260,11 @@ button:focus,
 @media all and (max-width: 750px) {
   .page-header {
     padding-bottom: 100px;
+  }
+
+  .profile__portrait {
+    height: 50px;
+    width: 50px;
   }
 
   .grid {
