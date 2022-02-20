@@ -11,10 +11,7 @@ visited link == #05676e
 selected link == #489c79
 button BG == #357b70
 grid gray = #D3D3D3
-
-
  */
-
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -106,6 +103,8 @@ h1 {
 }
 
 .page-header__item {
+  width: 200px;
+  height: 70px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;

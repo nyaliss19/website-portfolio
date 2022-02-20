@@ -4,8 +4,6 @@ visited link == #05676e
 selected link == #489c79
 button BG == #357b70
 grid gray = #D3D3D3
-
-
  */
 
 :root {
@@ -20,7 +18,6 @@ grid gray = #D3D3D3
   --white: #FFFFFF;
 
 }
-
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -105,6 +102,8 @@ h1 {
 }
 
 .page-header__item {
+  width: 200px;
+  height: 70px;
   flex: 0 1 200px;
 }
 
